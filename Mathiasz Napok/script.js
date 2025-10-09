@@ -8,4 +8,3 @@ const ev = ""
 
 fetch("code.json")
 
-console.log()
