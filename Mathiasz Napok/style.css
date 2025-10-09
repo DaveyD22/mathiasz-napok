@@ -3,7 +3,6 @@ header {
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #ffffff;
       z-index: 1000;
       text-align: center;
 }
@@ -12,9 +11,7 @@ footer{
       background-color: #ffffff;
       z-index: 1000;
       text-align: center;
-      background-color: #0e2239;
-      background-color: #0e2239;
-      color: white;
+      color: black;
       padding: 10px;
       font-size: 14px;
       position: fixed;
@@ -24,21 +21,22 @@ footer{
 }
 
 .cimsor {
-      background-color: #0e2239;
-      color: white;
+      background-color: #ffffff;
+      color: black;
       padding: 10px;
       font-size: 14px;
 }
 
 body {
-      padding-top: 75px;
+      padding-top: 7.5vh;
       font-family: sans-serif;
       background-color: lightgray;
       background-image: url(mathiasz.jpg);
       background-size: cover;
       background-blend-mode: darken;
       background-repeat: no-repeat;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.500);
+      background-attachment: fixed;
 }
 .butyon {
   background-color: black;
@@ -47,7 +45,6 @@ body {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  margin: auto 0px;
   display: block;
 }
 
@@ -84,7 +81,7 @@ body {
   z-index: 1;
 }
 
-.kontent a {
+.kontent, a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -101,12 +98,12 @@ ul {
   background-color: #0b1b2c;
 }
 
-ul li {
+ul, li {
     float:inline-start;
     padding-left: 15px;
 }
 
-ul li a {
+ul, li, a {
   display: block;
   color: white;
   text-align: center;
@@ -124,7 +121,7 @@ ul li a {
   border: 1px solid #555555;
 }
 
-li a {
+li, a {
   display: block;
   color: black;
   padding: 8px 16px;
@@ -134,17 +131,17 @@ li {
   text-align: center;
   border-bottom: 1px solid #555555;
 }
-li a.active {
+li, a.active {
   background-color: #04AA6D;
   color: white;
 }
-li a.hower:hover {
+li, a.hower:hover {
   background-color: #555555;
   color: white;
 }
 
 
-ul li a:hover {
+ul, li, a:hover {
   background-color: #111111;
 }
 
@@ -152,7 +149,9 @@ ul li a:hover {
 
 
 #naviiba{
-    margin-bottom: 150px;
+    margin-bottom: 10vh;
+    background-color: white;
+    color: black;
 }
 
 #flex-container {
@@ -192,8 +191,8 @@ ul li a:hover {
       font-size: 20px;
 }
 
-#kepszaLag{
-  height: 10vh;
-  background-color: white;
+#kepszaLag, article{
+  height: 30vh;
+  background-color: rgb(250, 240, 220);
   text-align: center;
 }
