@@ -92,15 +92,17 @@ h2, p {
 }
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #0b1b2c;
+  background-color: white;
+  
 }
 
 ul, li {
-    float:inline-start;
     padding-left: 15px;
+    display: flex;
+    flex-direction: row;
 }
 
 ul, li, a {
@@ -109,6 +111,10 @@ ul, li, a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
 }
 
 .filterkiserlet {
@@ -122,36 +128,36 @@ ul, li, a {
 }
 
 li, a {
-  display: block;
-  color: black;
   padding: 8px 16px;
   text-decoration: none;
+  background-color: rgba(200, 200, 200, 0.500);
 }
 li {
   text-align: center;
-  border-bottom: 1px solid #555555;
+  display: flex;
+  flex-direction: row;
 }
 li, a.active {
   background-color: #04AA6D;
   color: white;
 }
 li, a.hower:hover {
-  background-color: #555555;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 
 ul, li, a:hover {
-  background-color: #111111;
+  display: flex;
+  flex-direction: row;
 }
-
 .filterezes a:hover {background-color: #ddd;}
 
 
 #naviiba{
-    margin-bottom: 10vh;
     background-color: white;
     color: black;
+    margin: auto;
 }
 
 #flex-container {
@@ -191,8 +197,10 @@ ul, li, a:hover {
       font-size: 20px;
 }
 
-#kepszaLag, article{
+#kepszalag{
+  margin: 10vh 0px;
   height: 30vh;
   background-color: rgb(250, 240, 220);
   text-align: center;
+
 }
