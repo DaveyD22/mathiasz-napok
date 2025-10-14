@@ -125,10 +125,6 @@ ul, li, a {
   height: auto;
   background-color: #0b1b2c;
   border: 1px solid #555555;
-  @media all and (max-width: 600px)
-  {
-
-  }
 }
 
 li, a {
@@ -136,21 +132,12 @@ li, a {
   padding: 8px 16px;
   text-decoration: none;
   background-color: rgba(200, 200, 200, 0.500);
-  @media all and (max-width: 600px)
-{
-  display: flex;
-  flex-direction: column;
-  padding: 1.5vw 1.6vw;
-}
 }
 li {
   text-align: center;
   display: flex;
   flex-direction: row;
-   @media all and (max-width: 600px)
-   {
-    
-   }
+   
 }
 li, a.active {
   background-color: #04AA6D;
@@ -174,15 +161,6 @@ ul, li, a:hover {
     background-color: white;
     color: black;
     margin: auto;
-    @media all and (max-width: 600px)
-{
-  display: flex;
-  flex-direction: column;
-  padding: 0.5vw;
-  margin: 0.5vw;
-  width: auto;
-
-}
 
 }
 
@@ -229,9 +207,25 @@ ul, li, a:hover {
   height: 30vh;
   background-color: rgb(250, 240, 220);
   text-align: center;
-   @media all and (max-width: 600px)
-   {
-    display: none;
-   }
 }
+@media all and (max-width: 600px)
+   {
+    #kepszalag{
+      display: none;
+    }
+    #naviiba{
+      display: flex;
+      flex-direction: column;
+      padding: 0.5vw;
+      margin: 0.5vw;
+      width: auto;
+    }
+    li, a {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5vw 1.6vw;
+    }
+    
+   }
+
 
