@@ -93,14 +93,12 @@ h2, p {
 ul {
   list-style-type: none;
   margin: auto;
-  padding: 0;
   overflow: hidden;
   background-color: white;
   
 }
 
 ul, li {
-    padding-left: 15px;
     display: flex;
     flex-direction: row;
 }
@@ -109,7 +107,7 @@ ul, li, a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.14vw 0.16vw;
   text-decoration: none;
   background-color: white;
   color: black;
@@ -118,24 +116,41 @@ ul, li, a {
 }
 
 .filterkiserlet {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
-  height: 500px;
+  width: 13vw;
+  height: auto;
   background-color: #0b1b2c;
   border: 1px solid #555555;
+  @media all and (max-width: 600px)
+  {
+
+  }
 }
 
 li, a {
+  
   padding: 8px 16px;
   text-decoration: none;
   background-color: rgba(200, 200, 200, 0.500);
+  @media all and (max-width: 600px)
+{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5vw 1.6vw;
+}
 }
 li {
   text-align: center;
   display: flex;
   flex-direction: row;
+   @media all and (max-width: 600px)
+   {
+    
+   }
 }
 li, a.active {
   background-color: #04AA6D;
@@ -154,10 +169,21 @@ ul, li, a:hover {
 .filterezes a:hover {background-color: #ddd;}
 
 
+
 #naviiba{
     background-color: white;
     color: black;
     margin: auto;
+    @media all and (max-width: 600px)
+{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5vw;
+  margin: 0.5vw;
+  width: auto;
+
+}
+
 }
 
 #flex-container {
@@ -178,6 +204,7 @@ ul, li, a:hover {
     box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
     
 }
+    
 #kreta{
   background-color: #3e8e41;
   list-style-image: url(mathiasz.jpg);
@@ -202,5 +229,9 @@ ul, li, a:hover {
   height: 30vh;
   background-color: rgb(250, 240, 220);
   text-align: center;
-
+   @media all and (max-width: 600px)
+   {
+    display: none;
+   }
 }
+
