@@ -240,7 +240,7 @@ ul, li, a:hover {
   display: flex;
 }
 .m-btn{
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -278,7 +278,22 @@ ul, li, a:hover {
   border-radius: 10px;
   transform: 1s;
 }
-
+.nat-auto div:not(:last-child){
+  margin-right: 30px;
+  justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+  background-color: rgb(0, 0, 0);
+}
+#radio2:checked ~ .nav-auto .a-b2{
+  background-color: rgb(0, 0, 0);
+}
+#radio3:checked ~ .nav-auto .a-b3{
+  background-color: rgb(0, 0, 0);
+}
+#radio4:checked ~ .nav-auto .a-b4{
+  background-color: rgb(0, 0, 0);
+}
 
 @media all and (max-width: 600px)
    {
