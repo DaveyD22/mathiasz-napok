@@ -1,22 +1,6 @@
-const nev = "";
-const leiras = "";
-const img = "";
-const ev = "";
+const slides = document.querySelectorAll(".slides img");
+let slideIndex = 0;
 
-/*
-fetch("code.json")
-    .then(response => {
-        if (!response.ok){
-            throw new Error("várjá baj van")
-        }
-        return response.json();
-    })
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-
-*/
-
-fetchData()
 
 async function fetchData() {
     try{
@@ -32,3 +16,5 @@ async function fetchData() {
         console.log(e)
     }
 }
+
+fetchData()

@@ -213,7 +213,7 @@ p{
   float: left;
   margin: auto;
 }
-#kepszalag{
+.slides{
   background-blend-mode: darken;
   background-color: rgba(237, 229, 229, 0.7);
   border: 5px solid black;
