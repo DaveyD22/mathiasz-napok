@@ -43,8 +43,7 @@ body {
       margin: 0px 0px;
       padding-top: 7.5vh;
       font-family: sans-serif;
-      background-color: lightgray;
-      background-image: url(mathiasz.jpg);
+      background-color: #FED7D7;
       background-size: cover;
       background-blend-mode: darken;
       background-repeat: no-repeat;
@@ -194,7 +193,7 @@ ul, li, a:hover {
     
 #kreta{
   background-color: #3e8e41;
-  list-style-image: url(mathiasz.jpg);
+  list-style-image: url(img/mathiasz.jpg);
 }
 #oktportal{
   background-color:#369;
@@ -280,7 +279,7 @@ p{
   justify-content: center;
   background: linear-gradient(-165deg, #0b1b2c 0%, #ddd 100% );
   transition: scale 0.6s, rotate 0.6s, filter 0.5s;
-  background-image: url(mathiasz.jpg);
+  background-image: url(img/mathiasz.jpg);
   background-size: cover;
 }
 
