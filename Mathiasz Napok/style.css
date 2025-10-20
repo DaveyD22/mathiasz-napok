@@ -213,40 +213,7 @@ p{
   float: left;
   margin: auto;
 }
-.slides{
-  height: 60vh;
-  position: relative;
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-.slider img{
-  width: 100%;
-  display: none;
-  height: 60vh;
-}
-.slider button{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  background-color: hsla(0, 0%, 0%, 0.25);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-}
-.prev{
-  left: 0;
-}
-.next{
-  right: 0;
-}
-img.displaySlide{
-  display: block;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+
 
 .card-container {
   border: 2px solid black;
@@ -510,6 +477,39 @@ img.displaySlide{
   opacity: 1;
 }
 
+.carousel{
+  margin: 13vh auto;
+  width: 100%;
+  border-top: black 3px solid;
+  border-bottom: black 3px solid;
+  display: flex;
+  overflow-x: auto;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 5s infinite linear;
+}
+.carousel .card{
+  flex: 0 0 5em;
+  height: 5em;
+  font-size: 3rem;
+  text-align: center;
+  align-content: center;
+}
+.card img{
+  height: 100%;
+}
+
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
 @media all and (max-width: 600px)
    {
     .slides{
@@ -527,7 +527,3 @@ img.displaySlide{
     }
   }
 
-@keyframes fade {
-  from {opacity: .5;}
-  to {opacity: 1;}
-}
