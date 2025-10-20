@@ -28,7 +28,27 @@ footer{
       padding: 1vh;
       font-size: 14px;
       padding-left: 0;
-
+      display: flex;
+      align-items: center;
+      align-content: center;
+      gap: 20rem;
+      justify-content: center;
+      flex-direction: row;
+}
+footer div{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+footer p{
+  font-size: 1.1rem;
+}
+#title{
+  font-size: 1.25rem;
+  font-weight: 750;
+}
+#place{
+  font-size: 1.2rem;
 }
 
 .cimsor {
@@ -479,9 +499,7 @@ p{
 
 .carousel{
   margin: 13vh auto;
-  width: 100%;
-  border-top: black 3px solid;
-  border-bottom: black 3px solid;
+  width: 90%;
   display: flex;
   overflow-x: auto;
 }
@@ -492,7 +510,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: spin 5s infinite linear;
+  animation: spin 10s infinite linear;
 }
 .carousel .card{
   flex: 0 0 5em;
