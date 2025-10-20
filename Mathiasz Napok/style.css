@@ -6,6 +6,18 @@ header {
       z-index: 1000;
       text-align: center;
 }
+#mathiasz{
+  height: 250px;
+  float: right;
+  margin: 50px;
+  display: block;
+}
+#mathiasz:hover{
+  scale: 1.2;
+  filter: blur(2px);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  transition: scale 0.6s, rotate 0.6s, filter 0.5s;
+}
 footer{
       width: 100%;
       background-color: #ffffff;
@@ -20,6 +32,7 @@ footer{
 }
 
 .cimsor {
+  border: 2px solid black;
       background-color: #ffffff;
       color: black;
       padding: 10px;
@@ -37,19 +50,6 @@ body {
       background-repeat: no-repeat;
       background-color: rgba(0, 0, 0, 0.500);
       background-attachment: fixed;
-}
-.butyon {
-  background-color: black;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  display: block;
-}
-
-.butyon:hover, .butyon:focus {
-  background-color: #0e2239;
 }
 
 #myInput {
@@ -87,7 +87,15 @@ body {
   text-decoration: none;
   display: block;
 }
+.hirekcim{
+  display: flex;
+  flex-grow: 3;
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+}
 h2, p {
+
   margin: 10px;
 }
 ul {
@@ -160,22 +168,23 @@ ul, li, a:hover {
 #naviiba{
     background-color: white;
     color: black;
-    margin: auto;
+    height: 15px;
 
 }
 
 #flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1500px;  
-    margin: 0 auto;
+    margin-left: 15px;
+    margin: auto;
 }
 
 .flex-item {
     display: block;
     margin: 15px;
-    width: 500px;
+    width: 550px;
     height: 200px;
     background: #369;
     border: 1px solid black;
@@ -201,12 +210,21 @@ ul, li, a:hover {
       padding: 10px;
       font-size: 20px;
 }
-
+p{
+  float: left;
+  margin: auto;
+}
 #kepszalag{
-  margin: 10vh 0px;
-  height: 30vh;
-  background-color: rgb(250, 240, 220);
+  background-blend-mode: darken;
+  background-color: rgba(237, 229, 229, 0.7);
+  border: 5px solid black;
+  flex-grow: 3;
+  margin: 12vh 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 40vh;
   text-align: center;
+  justify-content: space-evenly;
 }
 @media all and (max-width: 600px)
    {
@@ -217,12 +235,7 @@ ul, li, a:hover {
       display: flex;
       flex-direction: column;
       padding: 0.5vw;
-      width: auto;
-    }
-    li, a {
-      display: flex;
-      flex-direction: column;
-      padding: 1.5vw 1.6vw;
+      height: 100px;
     }
     #flex-container{
       display: flex;
@@ -231,3 +244,264 @@ ul, li, a:hover {
   }
 
 
+.card-container {
+  border: 2px solid black;
+  width: 500px;
+  height: 300px;
+  position:relative;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.card-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-165deg, #e8e8e8 0%, #ddd 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(50px);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+}
+
+.card .img-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-165deg, #0b1b2c 0%, #ddd 100% );
+  transition: scale 0.6s, rotate 0.6s, filter 0.5s;
+  background-image: url(mathiasz.jpg);
+  background-size: cover;
+}
+
+.card .img-content svg {
+  width: 50px;
+  height: 50px;
+  fill: #212121;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #e8e8e8;
+  padding: 20px 24px;
+  line-height: 2;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover .img-content {
+  scale: 2.5;
+  rotate: 30deg;
+  filter: blur(7px);
+}
+
+.card:hover .img-content svg {
+  fill: transparent;
+}
+.kreta a {
+  padding: 17px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(55, 138, 10);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.6s ease;
+}
+
+.kreta:hover a {
+  letter-spacing: 3px;
+  background-color: rgb(55, 138, 10);
+  color: hsl(0, 0%, 100%);  
+}
+
+.kreta:active {
+  letter-spacing: 3px;
+  color: hsl(0, 31%, 6%);
+  transition: 100ms;
+}
+.oktatas {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: darkcyan;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 1px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  width: 10%;
+  text-align: center;
+}
+.oktatas a{
+  background: none;
+}
+.oktatas:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 20px 0px;
+}
+
+.oktatas:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(2px);
+  transition: 100ms;
+}
+.abutton {
+  background-color: #ffffff00;
+  color: black;
+  width: 8.5em;
+  height: 9vh;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.abutton:hover {
+  background-color: #3654ff;
+  color: #e8e8e8;
+  cursor: pointer;
+}
+
+.abutton svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.abutton:hover svg {
+  transform: translateX(5px);
+  color: #e8e8e8;
+}
+
+.text {
+  margin: 0 1.5em
+}
+.hirek {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hirek svg {
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hirek .arr-1 {
+  right: 26px;
+}
+
+.hirek .arr-2 {
+  left: -25%;
+}
+
+.hirek .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 10px;
+  background-color: #c5e5e4;
+  border-radius: 10%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hirek .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hirek:hover {
+  box-shadow: 0 0 0 8px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.hirek:hover .arr-1 {
+  right: -15%;
+}
+
+.hirek:hover .arr-2 {
+  left: 16px;
+}
+
+.hirek:hover .text {
+  transform: translateX(5px);
+}
+
+.hirek:hover svg {
+  fill: #1f387e;
+}
+
+.hirek:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.hirek:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
