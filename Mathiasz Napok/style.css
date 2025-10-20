@@ -214,6 +214,7 @@ p{
   margin: auto;
 }
 .slides{
+  height: 60vh;
   position: relative;
   width: 100%;
   margin: auto;
@@ -222,9 +223,29 @@ p{
 .slider img{
   width: 100%;
   display: none;
+  height: 60vh;
+}
+.slider button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.25);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.prev{
+  left: 0;
+}
+.next{
+  right: 0;
 }
 img.displaySlide{
   display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .card-container {
@@ -491,7 +512,7 @@ img.displaySlide{
 
 @media all and (max-width: 600px)
    {
-    #kepszalag{
+    .slides{
       display: none;
     }
     #naviiba{
@@ -505,3 +526,8 @@ img.displaySlide{
       flex-direction: column;
     }
   }
+
+@keyframes fade {
+  from {opacity: .5;}
+  to {opacity: 1;}
+}
