@@ -214,34 +214,18 @@ p{
   margin: auto;
 }
 .slides{
-  background-blend-mode: darken;
-  background-color: rgba(237, 229, 229, 0.7);
-  border: 5px solid black;
-  flex-grow: 3;
-  margin: 12vh 0px;
-  display: flex;
-  flex-direction: row-reverse;
-  height: 40vh;
-  text-align: center;
-  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
-@media all and (max-width: 600px)
-   {
-    #kepszalag{
-      display: none;
-    }
-    #naviiba{
-      display: flex;
-      flex-direction: column;
-      padding: 0.5vw;
-      height: 100px;
-    }
-    #flex-container{
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
+.slider img{
+  width: 100%;
+  display: none;
+}
+img.displaySlide{
+  display: block;
+}
 
 .card-container {
   border: 2px solid black;
@@ -504,3 +488,20 @@ p{
   height: 220px;
   opacity: 1;
 }
+
+@media all and (max-width: 600px)
+   {
+    #kepszalag{
+      display: none;
+    }
+    #naviiba{
+      display: flex;
+      flex-direction: column;
+      padding: 0.5vw;
+      height: 100px;
+    }
+    #flex-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
