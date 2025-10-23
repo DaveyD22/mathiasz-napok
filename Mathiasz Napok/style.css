@@ -190,10 +190,10 @@ ul, li, a:hover {
 
 }
 
-#flex-container {
+.flex-container {
     display: flex;
     flex-direction: row;
-    max-width: 1500px;
+    flex-wrap: wrap;
     margin-left: 15px;
     margin: auto;
 }
@@ -203,6 +203,7 @@ ul, li, a:hover {
     margin: 150px;
     width: 550px;
     height: 200px;
+    display: flex;
     background: #369;
     border: 1px solid black;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
@@ -217,16 +218,6 @@ ul, li, a:hover {
   background-color:#369;
 }
 
-#filterh2{
-  color: white;
-      padding: 10px;
-      font-size: 20px;
-}
-#filterev{
-  color: white;
-      padding: 10px;
-      font-size: 20px;
-}
 p{
   float: left;
   margin: auto;
@@ -240,6 +231,7 @@ p{
   position:relative;
   border-radius: 10px;
   margin-left: 15px;
+  flex-grow: inherit;
 }
 
 .card-container::before {
