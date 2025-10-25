@@ -1,24 +1,14 @@
 header {
-       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      text-align: center;
-      background-color: rgb(224, 213, 176);
-      color: black;
-}
-#mathiasz{
-  height: 250px;
-  float: right;
-  margin: 50px;
-  display: block;
-}
-#mathiasz:hover{
-  scale: 1.2;
-  filter: blur(2px);
-  transform: translate3d(0, 0, 0) scale(0.95);
-  transition: scale 0.6s, rotate 0.6s, filter 0.5s;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  background-color: rgb(224, 213, 176);
+  color: black;
+  height: 20vh;
+  background-image: url(img/);
 }
 footer{
       border-top: 2px solid black;
@@ -33,7 +23,7 @@ footer{
       display: flex;
       align-items: center;
       align-content: center;
-      gap: 20rem;
+      gap: 20vw;
       background-color: white;
       justify-content: center;
       flex-direction: row;
@@ -71,7 +61,6 @@ hr{
 
 body {
       margin: 0px 0px;
-      padding-top: 7.5vh;
       font-family: sans-serif;
       background-color: #fff0de;
       background-size: cover;
@@ -79,145 +68,38 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
 }
-
-#myInput {
-  box-sizing: border-box;
-  background-image: url('searchicon.png');
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 14px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-
-#myInput:focus {outline: 3px solid #ddd;}
-
-.filterezes {
-    padding-bottom: 150px;
-    display: block;
-    margin-top: -50px;
-}
-
-.kontent {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
-.kontent a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.hirekcim{
-  display: flex;
-  flex-grow: 3;
-  float: left;
-  margin-top: 25px;
-  margin-left: 25px;
-}
 h2 p {
 
   margin: 10px;
 }
-ul {
-  list-style-type: none;
-  margin: auto;
-  overflow: hidden;
-  background-color: white;
-  
-}
-
-ul li {
-    display: flex;
-    flex-direction: row;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0.14vw 0.16vw;
-  text-decoration: none;
-  background-color: white;
-  color: black;
-  display: flex;
-  flex-direction: row;
-}
-
-
-li a {
-  
-  padding: 8px 16px;
-  text-decoration: none;
-  background-color: rgba(200, 200, 200, 0.500);
-}
-li {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-   
-}
-li a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-li a.hower:hover {
-  background-color: white;
-  color: black;
-}
-
-
-ul, li, a:hover {
-  display: flex;
-  flex-direction: row;
-}
-.filterezes a:hover {background-color: #ddd;}
-
-
-
 #naviiba{
     background-color: white;
     color: black;
-    height: 15px;
+    height: 50px;
+    text-align: left;
 
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 15px;
-    margin: auto;
-    padding: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: auto;
+  justify-content: center;
+  padding-bottom: 3vh;
 }
 
 .flex-item {
-    display: block;
-    margin: 150px;
-    width: 550px;
-    height: 200px;
-    display: flex;
-    background: #369;
-    border: 1px solid black;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 150px;
+  width: 550px;
+  height: 200px;
+  display: flex;
+  background: #369;
+  border: 1px solid black;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
     
 }
-    
-#kreta{
-  
-  list-style-image: url(img/mathiasz.jpg);
-}
-#oktportal{
-  background-color:#369;
-}
-
 p{
   float: left;
   margin: auto;
@@ -311,180 +193,6 @@ p{
 .card:hover .img-content svg {
   fill: transparent;
 }
-.kreta a {
-  padding: 17px 40px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 0;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.6s ease;
-}
-
-.kreta a:hover{
-  letter-spacing: 3px;
-  color: hsl(0, 0%, 100%);  
-}
-
-.kreta:active {
-  letter-spacing: 3px;
-  color: hsl(0, 31%, 6%);
-  transition: 100ms;
-}
-.oktatas {
-  padding: 17px 40px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background-color: darkcyan;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 1px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-  width: 10%;
-  text-align: center;
-}
-.oktatas a{
-  background: none;
-}
-.oktatas:hover {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 7px 20px 0px;
-}
-
-.oktatas:active {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-  transform: translateY(2px);
-  transition: 100ms;
-}
-.abutton {
-  background-color: #ffffff00;
-  color: black;
-  width: 8.5em;
-  height: 9vh;
-  border: #3654ff 0.2em solid;
-  border-radius: 11px;
-  text-align: right;
-  transition: all 0.6s ease;
-}
-
-.abutton:hover {
-  background-color: #3654ff;
-  color: #e8e8e8;
-  cursor: pointer;
-}
-
-.abutton svg {
-  width: 1.6em;
-  margin: -0.2em 0.8em 1em;
-  position: absolute;
-  display: flex;
-  transition: all 0.6s ease;
-}
-
-.abutton:hover svg {
-  transform: translateX(5px);
-  color: #e8e8e8;
-}
-
-.text {
-  margin: 0 1.5em
-}
-.hirek {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 16px 36px;
-  border: 4px solid;
-  border-color: transparent;
-  font-size: 16px;
-  background-color: white;
-  border-radius: 100px;
-  font-weight: 600;
-  color: #1f387e;
-  box-shadow: 0 0 0 2px #ffffff;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hirek svg {
-  position: absolute;
-  width: 24px;
-  fill: #1f387e;
-  z-index: 9;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hirek .arr-1 {
-  right: 26px;
-}
-
-.hirek .arr-2 {
-  left: -25%;
-}
-
-.hirek .circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 10px;
-  background-color: #c5e5e4;
-  border-radius: 10%;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hirek .text {
-  position: relative;
-  z-index: 1;
-  transform: translateX(-12px);
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hirek:hover {
-  box-shadow: 0 0 0 8px transparent;
-  color: #212121;
-  border-radius: 12px;
-}
-
-.hirek:hover .arr-1 {
-  right: -15%;
-}
-
-.hirek:hover .arr-2 {
-  left: 16px;
-}
-
-.hirek:hover .text {
-  transform: translateX(5px);
-}
-
-.hirek:hover svg {
-  fill: #1f387e;
-}
-
-.hirek:active {
-  scale: 0.95;
-  box-shadow: 0 0 0 4px greenyellow;
-}
-
-.hirek:hover .circle {
-  width: 220px;
-  height: 220px;
-  opacity: 1;
-}
-
 .carousel{
   margin: 13vh auto;
   width: 90%;
@@ -511,9 +219,7 @@ p{
   height: 100%;
 }
 nav{
-  display: block;
   flex-direction: row;
-  float: left;
 }
 
 section{
@@ -524,21 +230,15 @@ section{
   from {translate: 0;}
   to {translate: -100%;}
 }
-
 @media all and (max-width: 600px)
    {
     .slides{
       display: none;
     }
-    #naviiba{
-      display: flex;
-      flex-direction: column;
-      padding: 0.5vw;
-      height: 100px;
-    }
     .flex-container{
+      justify-content: center;
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
     }
   }
-
